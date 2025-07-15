@@ -12,6 +12,7 @@
       padding: 0;
       overflow-x: hidden;
       background: #fff;
+      background: url('./background2.png') center center/cover no-repeat fixed;
       color: #000;
     }
 
@@ -94,7 +95,6 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 4rem 2rem;
-    background-color: #fff;
     max-width: 1100px;
     margin: 0 auto;
     }
@@ -144,11 +144,17 @@
     }
 
     #about {
-    padding: 4rem 2rem;
-    background-color: #fefefe;
-    color: #222;
-    max-width: 1000px;
-    margin: 0 auto;
+    flex: 0 0 280px;
+    background-color: #fff5f5;
+    border: 1px solid #ffd6d6;
+    border-radius: 12px;
+    margin-top: 5rem; 
+    padding: 0.5rem;
+    scroll-snap-align: start;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    
     }
 
     #about h2 {
@@ -167,7 +173,6 @@
 
     #news {
     padding: 4rem 2rem;
-    background: #fefefe;
     max-width: 1200px;
     margin: 0 auto;
     }
@@ -217,7 +222,6 @@
 
     #contact {
     padding: 4rem 2rem;
-    background-color: #fff;
     text-align: center;
     }
 
